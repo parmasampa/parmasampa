@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Este é um site pessoalpara uso em marketing">
+    <meta name="description" content="Este é um site pessoal para uso em marketing">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Curso de programação para marketing. </title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
+    <!-- Add the OuiBounce CSS & Font -->
+     <link rel="stylesheet" href="css/ouibounce.css">
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+     <!-- Load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"> </script>
+
+     <!-- Add OuiBounce JS -->
+        <script src="js/ouibounce.js"></script>
+
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/bootstrap.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -31,80 +41,223 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+    //google analytics
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177087923-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177087923-1');
+</script>
+
+<script>
+  (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+  mixpanel.init("0b6d784dcdb24fdab4a25e1dff1aac29", {batch_requests: true})
+</script>
+
+  </head>
+  <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+  mixpanel.init("0b6d784dcdb24fdab4a25e1dff1aac29", {batch_requests: true})</script>
+
+  <body>
+    <script type"text/javascript">
+    mixpanel.track('Page Viewed',{
+      'Page Title':document.title,
+      'url': window.location.pathname
+  });
+    </script>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="http://tribo163.com">Tribo 163</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://tribo163.com"> Sobre </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://tribo163.com">Curso de Live</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="http://tribo163.com" tabindex="-1" aria-disabled="true">Disable</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Midias Sociais </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Facebook</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+            <a class="dropdown-item" href="#">Youtube</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0" _lpchecked="1">
+        <input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar no Site</button>
+      </form>
+
+    </div>
+  </nav>
 
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
+      <h1 class="display-3">TRIBO 163</h1>
+      <p class="subtitle">Este site é para pessoas que desejam sair de sua zona de  conforto e aprender novas habilidades</p>
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="https://facebook.us14.list-manage.com/subscribe/post?u=f22db2290a73cfa78d7f146e5&amp;id=3e4f9e1e33" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+      <div class="mc-field-group">
+      	<label for="mce-EMAIL"> </label>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f22db2290a73cfa78d7f146e5_3e4f9e1e33" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Cadastre-se" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg"></div>
+          </div>
+      </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+
+    <!--  <p><a class="btn btn-primary btn-lg" href="https://hotm.art/Curso_de_Lives" role="button">Acesse Agora</a></p>-->
+  </div>
   </div>
 
   <div class="container">
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <h2>Aulas Online</h2>
+        <p>Quer aprender novas habilidades do mundo digital sem sair do conforto do seu lar. Você gosta de áudio, vídeo e internet, está no lugar certo </p>
+        <p><a class="btn btn-secondary" onClick="botao_aula()" href="http://tribo163.com" role="button">Clique aqui e saiba mais &raquo;</a></p>
+        <script type="text/javascript">
+          function botao_aulas_online(){
+            mixpanel.track('Clique Botao', {
+              'Tipo': 'Aulas On Line',
+              'url':window.location.pathname
+            })
+          }
+        </script>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <h2>Presencial</h2>
+        <p>Gostaria de receber uma visita ou prefere bater um papo pessoalmente sobre mídias digitais. </p>
+        <p></p>
+        <p><a class="btn btn-secondary" onclick="botao_presencial" href="http://tribo163.com" role="button">Entre em Contato &raquo;</a></p>
+        <script type="text/javascript">
+          function botao_presencial(){
+            mixpanel.track('Clique Botao', {
+              'Tipo': 'Presencial',
+              'url':window.location.pathname
+            })
+          }
+        </script>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <h2>Consultoria</h2>
+        <p>Deseja uma consultoria de mídia, ou de alguem que possa ajudar a aumentar sua vísibilidade nas mídias sociais. Através de estrátegias de marketing.</p>
+        <p><a class="btn btn-secondary" onClick="botao_consultoria" href="http://tribo163.com" role="button">Entre em Contato &raquo;</a></p>
+        <script type="text/javascript">
+          function botao_consultoria(){
+            mixpanel.track('Clique Botao', {
+              'Tipo': 'Consultoria',
+              'url':window.location.pathname
+            })
+          }
+        </script>
       </div>
     </div>
 
     <hr>
 
-  </div> <!-- /container -->
+
+     </div>
+   </div>
+
 
 </main>
+<!-- OuiBounce popup -->
+<div id="ouibounce-popup">
+  <div class="underlay"></div>
+  <div class="popup">
+    <div class="popup-title">
+      <h3>Não vá embora Agora!</h3>
+    </div>
 
+    <div class="popup-body">
+      <p>Com certeza podemos lhe ajudar com suas mídias sociais.Caso tenha ficado com alguma dúvida.Se inscreva em nossa lista de e-mails para receber dicas valiosas sobre marketing nas mídias sociais</p>
+      <p>Quer anunciar no Facebook, Instagram ou no Google. <a href="tribo163.com" target="blank">[1]</a></p>
+
+      <form>
+        <input type="text" placeholder="Seu e-mail@email.com">
+        <input type="submit" value="Saiba mais &raquo;">
+        <p class="form-notice">Inscreva-se na nossa Newsletter</p>
+      </form>
+    </div>
+
+    <div class="popup-footer">
+      <p>Não Muito Obrigado!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Example page JS        -->
+<!-- Used to fire the popup -->
+<script>
+
+  // if you want to use the 'fire' or 'disable' fn,
+  // you need to save OuiBounce to an object
+  var _ouibounce = ouibounce(document.getElementById('ouibounce-popup'), {
+    aggressive: true,
+    timer: 0,
+    callback: function() { console.log('ouibounce fired!'); }
+  });
+
+  $('body').on('click', function() {
+    $('#ouibounce-popup').hide();
+  });
+
+  $('#ouibounce-popup .popup-footer').on('click', function() {
+    $('#ouibounce-popup').hide();
+  });
+
+  $('#ouibounce-popup .popup').on('click', function(e) {
+    e.stopPropagation();
+  });
+</script>
+
+</body>
 <footer class="container">
-  <p>&copy; Company 2017-2020</p>
+  <p>&copy; Tribo 163 - 2020</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

@@ -403,8 +403,10 @@ h6, .h6 {
 
 .display-3 {
   font-size: 4.5rem;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.2;
+  color: #ffffff ;
+  text-shadow: 2px 2px #000;
 }
 
 .display-4 {
@@ -3118,6 +3120,7 @@ fieldset:disabled a.btn {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
+  margin-top: 10px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -5251,6 +5254,15 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
+  background-image: url(../img/programacao1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 18px;
+  text-shadow: 2px 1px #000;
 }
 
 @media (min-width: 576px) {
